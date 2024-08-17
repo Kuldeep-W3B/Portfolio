@@ -1,13 +1,50 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/*.Home-Container {
+  background-image: url('D:\Mern\portfolio\src\Images\Image 3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  width: 100%;
+}*/
+
+.custom-underline {
+  position: relative;
+  display: inline-block;
+  color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.custom-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust as needed */
+  width: 100%;
+  height: 2px; /* Adjust as needed */
+  background-color: blue; /* Your underline color */
 }
+
+/*about
+.tustom-underline {
+  position: relative;
+  display: inline-block;
+  color: black;
+}
+
+.tustom-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px; 
+  background-color: blue;
+}
+*/
+
