@@ -1,25 +1,20 @@
 import React from 'react';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Footer = () => {
   return (
     <footer className="bg-blue-500 text-white py-6">
       <div className="container mx-auto text-center">
-        <p className="mb-4">&copy; 2024 MyPort. All rights reserved.</p>
+        <p className="mb-4">&copy; 2024 QuickCoder. All rights reserved.</p>
         <div className="flex justify-center space-x-4">
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
-            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M24 4.557a9.933 9.933 0 01-2.828.775A4.933 4.933 0 0023.337 3.1a9.86 9.86 0 01-3.127 1.184A4.92 4.92 0 0016.616 2c-2.737 0-4.96 2.206-4.96 4.925 0 .386.044.761.127 1.122C7.728 7.939 4.1 5.905 1.671 2.906a4.886 4.886 0 00-.671 2.475c0 1.71.873 3.217 2.201 4.096A4.904 4.904 0 01.964 8.1v.049a4.92 4.92 0 003.95 4.826 4.922 4.922 0 01-2.225.084 4.928 4.928 0 004.6 3.417A9.875 9.875 0 010 19.54a13.916 13.916 0 007.548 2.209c9.056 0 14.01-7.496 14.01-13.986 0-.213 0-.425-.016-.636A10.01 10.01 0 0024 4.557z"/>
-            </svg>
+          <a href="https://www.instagram.com/1m____devil/?hl=en" target="_blank" rel="noopener noreferrer" className="text-white hover:text-pink-700 transition-colors">
+            <i className="fab fa-instagram fa-2x"></i>
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
-            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M19.616 3.5H4.373c-.517 0-.932.426-.932.949v15.1c0 .522.415.951.932.951h15.243c.518 0 .933-.429.933-.951v-15.1c0-.523-.415-.949-.933-.949zM7.356 18.404H5.058V9.285h2.298v9.119zm-1.15-10.357c-.732 0-1.324-.594-1.324-1.324 0-.732.592-1.323 1.324-1.323.731 0 1.323.591 1.323 1.323 0 .73-.592 1.324-1.323 1.324zm12.197 10.357h-2.298v-4.982c0-1.185-.024-2.708-1.651-2.708-1.652 0-1.905 1.291-1.905 2.623v5.067h-2.299v-9.119h2.206v1.245h.032c.308-.584 1.062-1.198 2.186-1.198 2.339 0 2.772 1.539 2.772 3.542v5.53z"/>
-            </svg>
+          <a href="https://www.linkedin.com/in/kuldeep-singh-587842282/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-900 transition-colors">
+            <i className="fab fa-linkedin fa-2x"></i>
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
-            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.799 8.205 11.387.599.111.793-.26.793-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.611-4.042-1.611-.546-1.387-1.333-1.756-1.333-1.756-1.089-.744.083-.729.083-.729 1.204.084 1.838 1.235 1.838 1.235 1.07 1.832 2.807 1.302 3.492.995.108-.776.418-1.302.762-1.602-2.665-.303-5.467-1.332-5.467-5.932 0-1.311.467-2.382 1.235-3.221-.124-.303-.535-1.526.117-3.176 0 0 1.008-.322 3.3 1.231.958-.266 1.984-.399 3.004-.403 1.02.004 2.046.137 3.006.403 2.291-1.553 3.297-1.231 3.297-1.231.653 1.65.242 2.873.118 3.176.77.839 1.232 1.91 1.232 3.221 0 4.61-2.805 5.625-5.478 5.921.43.37.816 1.096.816 2.209 0 1.595-.015 2.88-.015 3.273 0 .319.192.694.799.577C20.565 21.795 24 17.298 24 12c0-6.627-5.373-12-12-12z"/>
-            </svg>
+          <a href="https://github.com/Kuldeep-W3B" target="_blank" rel="noopener noreferrer" className="text-white hover:text-black transition-colors">
+            <i className="fab fa-github fa-2x"></i>
           </a>
         </div>
       </div>

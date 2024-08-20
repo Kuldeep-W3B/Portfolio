@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
@@ -19,7 +20,7 @@ app.use(
 
 // MongoDB connection
 mongoose
-  .connect("mongodb://localhost:27017/ksportfolio")
+  .connect(process.env.MONGO_URL)
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log("MongoDB connection error: ", err));
 
@@ -51,7 +52,7 @@ app.post("/contacts", async (req, res) => {
   try {
     const user = new User({ name, email, message });
     await user.save();
-    res.status(200).json({ msg: "User created successfully" });
+    res.status(200).json({ msg: "message sent successfully" });
   } catch (err) {
     res.status(500).json({ msg: err.message });
   }

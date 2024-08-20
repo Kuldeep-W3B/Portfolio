@@ -3,18 +3,17 @@ import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-
 const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
- 
+
   const handleSubmit = (e) => {
     e.preventDefault();
     axios.post('http://localhost:5000/contacts', { name, email, message })
       .then(res => {
         console.log(res);
-        toast.success("User created successfully");
+        toast.success("Message Sent successfully");
 
         // Clear the form fields
         setName('');
@@ -40,7 +39,7 @@ const Contact = () => {
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
-              className="w-full px-3 py-2 border border-gray-300 rounded-md"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-700"
             />
           </div>
           <div className="mb-4">
@@ -51,7 +50,7 @@ const Contact = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full px-3 py-2 border border-gray-300 rounded-md"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-700"
             />
           </div>
           <div className="mb-4">
@@ -61,7 +60,7 @@ const Contact = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
-              className="w-full px-3 py-2 border border-gray-300 rounded-md h-32"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md h-32 focus:outline-none focus:border-blue-700"
             ></textarea>
           </div>
           <div className="flex justify-center">
