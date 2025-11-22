@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://portfolio-mocha-beta-22.vercel.app/",
     methods: ["GET", "POST"],
     credentials: true,
   })
